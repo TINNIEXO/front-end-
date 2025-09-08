@@ -1,0 +1,39 @@
+
+:root{
+    --dunkinOrange:rgb(245, 98, 0);
+    --whiteText:white;
+    --pink: rgb(225, 19, 131);
+    --black: black;
+    --shadowColor: rgba(0, 0, 0, 0.5);
+    
+  }
+
+  @font-face {
+    font-family:dunkin-sans;
+    src: url(/fonts/font1.woff2);
+    font-weight: 400;
+  }
+
+
+section{
+    background-image: url(/afbeeldingen/banner.jpg);
+}
+article{
+    display: flex;
+    font-family: dunkin-sans;
+    width: 100%;
+}
+
+article img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+}
+
+
+
+article h2{
+    
+}
+
