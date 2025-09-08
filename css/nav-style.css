@@ -1,0 +1,72 @@
+:root{
+    --dunkinOrange:rgb(245, 98, 0);
+    --whiteText:white;
+    --pink: rgb(225, 19, 131);
+    --black: black;
+    --shadowColor: rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  @font-face {
+    font-family:dunkin-sans;
+    src: url(/fonts/font1.woff2);
+    font-weight: 400;
+  }
+ 
+  
+  body{
+    margin: 0;
+  }
+  header nav{
+    font-family:dunkin-sans;
+    background-color: var(--dunkinOrange);
+    position: sticky;
+    display:flex;
+    align-items: center; 
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius:1em;
+    padding-bottom: 0.4em;
+    padding-top: 0.4em;
+  }
+  
+
+  header nav img{
+    width: 10em;
+    height: 2em;
+    margin-top: 1em;
+    margin-right: 0.6em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+
+
+
+nav a{
+  color: var(--whiteText);
+  text-decoration: none;
+  margin: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+nav a:nth-child(7){
+  color: var(--dunkinOrange);
+  background-color: var(--whiteText);
+  font-weight: bold;
+  padding: .7em 1em;
+  border-radius: 1rem;
+  box-shadow: 0 0.1em 0.3em var(--shadowColor);
+  margin-left: auto;
+  
+}
+
+
+nav a:nth-child(8){
+  color: var(--whiteText);
+  background-color: var(--pink);
+  font-weight: bold;
+  padding: .7em 1em;
+  border-radius: 1rem;
+  box-shadow: 0 0.1em 0.2em var(--shadowColor);
+  margin-right: 3em;
+}
