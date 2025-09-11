@@ -40,13 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.dunkin.nl/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  hier de naam van de pagina: HomePage 
   <img src="readme-images/smallscreen.png" width="375px" alt="screenshot van de mobiele website">
   
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  hier de naam van de pagina: About us pagina 
+  <img src="readme-images/tweedepagina.png" width="375px" alt="about us page">
  
 </details>
 
@@ -59,7 +59,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  1. Veel tekstjes waren in kopjes gezet terwijl het als <p> voorgelezen moet worden met de screenreader
+  2. Pagina's missen een <h1>
+  3. xxxx
+  
 </details>
 
 
@@ -70,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-sketch].pdf" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
