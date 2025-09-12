@@ -16,14 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Tin phna
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
- 
+  responsive
 </details>
 
 
@@ -62,6 +61,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. Veel tekstjes waren in kopjes gezet terwijl het als <p> voorgelezen moet worden met de screenreader
   2. Pagina's missen een <h1>
   3. xxxx
+  4. x
+  5. x
+  6. x
+  7. x
   
 </details>
 
@@ -99,20 +102,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Tin Phan     | student 2          | student 3    | student 4        |
+  | ---             | ---                | ---          | ---              |
+  | css             | en dit             | en ik dit    | en dan ik dat    |
+  | html            | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | breakdownschets | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+  1. Ik mis een h1 op de pagina.
+  2. footer breakdown ontbreekt.
+  3. Product items zijn geen articles, maar een list item.
+  4. Als je een afbeelding in een article wilt afsnijden kan je overflow gebruiken zodat de img niet uit de container steekt en op hoogte blijft met de container. 
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
