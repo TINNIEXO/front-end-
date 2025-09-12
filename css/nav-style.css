@@ -1,67 +1,69 @@
-:root{
-    --dunkinOrange:rgb(245, 98, 0);
-    --whiteText:white;
-    --pink: rgb(225, 19, 131);
-    --black: black;
-    --shadowColor: rgba(0, 0, 0, 0.5);
-    
-  }
-  
-  @font-face {
-    font-family:dunkin-sans;
-    src: url(/fonts/font1.woff2);
-    font-weight: 400;
-  }
- 
-  
-  body{
-    margin: 0;
-  }
-  header nav{
-    font-family:dunkin-sans;
-    background-color: var(--dunkinOrange);
-    position: sticky;
-    display:flex;
-    align-items: center; 
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius:1em;
-    padding-bottom: 0.4em;
-    padding-top: 0.4em;
-  }
-  
+:root {
+  --dunkinOrange: rgb(245, 98, 0);
+  --whiteText: white;
+  --pink: rgb(225, 19, 131);
+  --black: black;
+  --shadowColor: rgba(0, 0, 0, 0.5);
+}
 
-  header nav img{
-    width: 10em;
-    height: 2em;
-    margin-top: 1em;
-    margin-right: 0.6em;
-    margin-left: 2em;
-    margin-bottom: 1em;
-  }
+@font-face {
+  font-family: dunkin-sans;
+  src: url(/fonts/font1.woff2);
+  font-weight: 900;
+}
 
+body {
+  margin: 0;
+}
 
+header nav {
+  font-family: dunkin-sans;
+  background-color: var(--dunkinOrange);
+  position: sticky;
+  display: flex;
+  align-items: center; 
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 0.4em 0;
+}
 
-nav a{
+header nav img {
+  width: 10em;
+  height: 2em;
+  margin: 1em 0.6em 1em 2em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 100rem; /* Zorgt dat margin-left:auto werkt */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
   color: var(--whiteText);
   text-decoration: none;
   margin: 1em;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
-nav a:nth-child(7){
+li:nth-child(6) {
+  margin-left: auto; /* duwt dit item en alles erna naar rechts */
+}
+
+li:nth-child(6) a {
   color: var(--dunkinOrange);
   background-color: var(--whiteText);
   font-weight: bold;
-  padding: .7em 1em;
+  padding: .4em 1em;
+  font-weight: 900;
   border-radius: 1rem;
-  box-shadow: 0 0.1em 0.3em var(--shadowColor);
-  margin-left: auto;
-  
+  box-shadow: 0 0.1em 0.3em var(--shadowColor);  
 }
 
-
-nav a:nth-child(8){
+li:nth-child(7) a {
   color: var(--whiteText);
   background-color: var(--pink);
   font-weight: bold;
