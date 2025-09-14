@@ -6,11 +6,9 @@
 
 /* font-face correct formaat en performance hint */
 @font-face {
-  font-family: "dunkin-sans";
-  src: url("/fonts/font1.woff2");
-  font-weight: 400 700;
-  font-style:normal;
-  font-display:swap;
+    font-family:dunkin-sans ;
+    src: url(url/fonts/font1.woff2);
+    font-weight: 400;
 }
 
 body{
