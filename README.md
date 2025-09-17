@@ -60,9 +60,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
   1. Veel tekstjes waren in kopjes gezet terwijl het als <p> voorgelezen moet worden met de screenreader
   2. Pagina's missen een <h1>
-  3. xxxx
-  4. x
-  5. x
+  3. hierarchie met de h2,h3 is er niet. 
+  4. responsive, knopjes overlappen stukken tekst in de navigatie 
+  5. afbeeldingen zijn niet mooi geplaatst wanneer de scherm kleiner wordt
   6. x
   7. x
   
@@ -118,7 +118,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 </details>
-
+-mijn plan van aanpak, ik ga nu de hmtl opnieuw schrijven en de navigatie eerst fixen zodat het responsief is met mobiele schermen en kleinere schermformaten. Wanneer ik klaar ben met de navigatie ga ik verder met de main. 
 
 
 
