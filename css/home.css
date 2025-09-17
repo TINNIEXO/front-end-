@@ -1,17 +1,17 @@
 @font-face {
     font-family: dunkin-sans;
-    src: url(/fonts/font1.woff2);
+    src: url(fonts/font1.woff2);
     font-weight: 900;
 }
 @font-face {
     font-family: twee-sans;
-    src: url(/fonts/font2.woff2);
+    src: url(fonts/font2.woff2);
     font-weight: 900;
 }
 
 @font-face {
     font-family: "a-sans";
-    src: url("/fonts/font4.woff2");
+    src: url("fonts/font4.woff2");
     font-weight: 400 700;
     font-style:normal;
     font-display:swap;
@@ -20,31 +20,31 @@
 
 @font-face {
     font-family: long-sans;
-    src: url(/fonts/font3.woff2);
+    src: url(fonts/font3.woff2);
     font-weight: 400;
 }
 
 @font-face {
     font-family: new-sans;
-    src: url(/fonts/font4.woff2);
+    src: url(fonts/font4.woff2);
     font-weight: 900;
 }
 
 @font-face {
     font-family: header-sans;
-    src: url(/fonts/font5.woff2);
+    src: url(fonts/font5.woff2);
     font-weight: 900;
 }
 
 @font-face {
     font-family: zes-sans;
-    src: url(/fonts/font6.woff2);
+    src: url(fonts/font6.woff2);
     font-weight: 900;
 }
 
 @font-face {
     font-family: idk-sans;
-    src: url(/fonts/font7.woff2);
+    src: url(fonts/font7.woff2);
     font-weight: 900;
 }
 
