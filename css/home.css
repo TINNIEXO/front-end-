@@ -1,0 +1,210 @@
+@font-face {
+    font-family: dunkin-sans;
+    src: url(/fonts/font1.woff2);
+    font-weight: 900;
+}
+@font-face {
+    font-family: twee-sans;
+    src: url(/fonts/font2.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "a-sans";
+    src: url("/fonts/font4.woff2");
+    font-weight: 400 700;
+    font-style:normal;
+    font-display:swap;
+  }
+
+
+@font-face {
+    font-family: long-sans;
+    src: url(/fonts/font3.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: new-sans;
+    src: url(/fonts/font4.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: header-sans;
+    src: url(/fonts/font5.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: zes-sans;
+    src: url(/fonts/font6.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: idk-sans;
+    src: url(/fonts/font7.woff2);
+    font-weight: 900;
+}
+
+:root{
+    --black:black;
+    --transparant-wit:rgba(255, 255, 255, 0.2); 
+    --green:rgb(37, 82, 3);
+
+}
+:root{
+    --orange: #FF671F;   /* Dunkin orange */
+    --magenta: #DA1884;  /* Dunkin magenta */
+    --white: #FFFFFF;
+  }
+
+
+body{
+    font-family:header-sans;
+    font-weight: 900;
+    overflow-x: hidden;
+}
+
+
+section:nth-child(1) img{
+    width: 105rem;
+    z-index: -1;
+    position: absolute;
+    top: -17.5rem;
+    left: 0;
+    filter: brightness(70%);
+}
+
+section:nth-child(1){
+    /* margin-top:9rem; */
+    color: var(--white);
+    text-align: center;
+    padding: 7em;
+    /* margin-bottom: 5rem; */
+}
+
+section:nth-child(1) h2{
+    font-size: 3.3rem;
+    margin-bottom: 0;
+}
+
+section:nth-child(1) p{
+    font-family: long-sans;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    filter: opacity(80%);
+    margin-bottom: 2rem;
+}
+
+section:nth-child(1) a{
+    font-family: header-sans;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--white);
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+section:nth-of-type(1) article a:first-of-type { 
+    background-color:white;
+    color:var(--black);
+    padding:.7rem;
+    padding-right: 1rem;
+    padding-left:1rem;
+    border-radius: .9rem;
+    margin-right: 2rem;
+}
+
+section:nth-of-type(1) article a:last-of-type{ 
+    background-color:var(--transparant-wit);
+    padding:.7rem;
+    padding-right: 1rem;
+    padding-left:1rem;
+    border-radius: .9rem;
+    margin-left: -1rem;
+}
+
+
+section:nth-child(1) a:hover{
+    padding: 1rem 2rem;
+}
+
+
+section:nth-child(2) h2{
+    text-align: center;
+    margin-top: 10rem;
+    font-family: header-sans;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+
+/*Article 1 */
+section:nth-child(2) article:first-of-type{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: var(--green);
+    color: white;
+    margin: 2rem;
+    border-radius: 1.5rem;
+    overflow:hidden;
+}
+
+section:nth-child(2) article:first-of-type h3, section:nth-child(2) article:first-of-type p {
+  flex: 1 1 100%; /* neemt volle breedte, dus onder elkaar */
+}
+
+section:nth-child(2) article:first-of-type h3{
+    font-family: long-sans;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-left:1.5rem;
+    margin-right: 1.5rem;
+}
+
+section:nth-child(2) article:first-of-type p{
+
+    font-family: long-sans;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+}
+
+section:nth-child(2) article:first-of-type a{
+    background-color: white;
+    margin-left: 1.5rem;
+    border-radius: 1.2rem;
+    color: var(--orange);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+    padding-top: .9em;
+    padding-bottom: .9em;
+
+
+}
+section:nth-child(2) article:first-of-type img{
+    position: absolute;
+    right: -1rem;
+    bottom: -15rem;
+    width: 40rem;
+}
+
+
+
+
+  
