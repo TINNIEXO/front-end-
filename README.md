@@ -148,8 +148,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De @fontface, klopt niet 100%. <img width="256" height="101" alt="Scherm­afbeelding 2025-09-19 om 13 47 32" src="https://github.com/user-attachments/assets/ac0fa61f-085e-49d2-b814-930ae4027f8b" /> zoals je kan zien in deze screenshot klopt niet, font weight is de dikte de belangrijkste waardes van font weight is 400(normal) en 700(bold). Check css mozilla om de @fontface goed te gebruiken. 
 
 </details>
-belangrijk! Als je een font wilt selecteren zonder problemen later met github, gebruik "../font" de dubbele puntjes gaat volledig uit je map en zoekt dan naar font. ALs je het zo  gebruikt komen er geen problemen met het uploaden naar github. 
-
+- Belangrijk! Als je een font wilt selecteren zonder problemen later met github, gebruik "../font" de dubbele puntjes gaat volledig uit je map en zoekt dan naar font. ALs je het zo  gebruikt komen er geen problemen met het uploaden naar github. 
+- Belangrijk! Alles wat je importeert in je css moet altijd boven aan vervolgens je :root en dan de rest van je css!
 
 
 
