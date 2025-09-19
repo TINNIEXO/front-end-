@@ -129,26 +129,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  - ik wil kijken of mijn navigatie responsief klopt in de css.
+  - meer duidelijkheid krijgen over @fontface en hoe ik de fonts kan vinden die in de website worden gebruikt. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Tin      | aminata        | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | duidelijkheid over html          | de correcte manier om iets responsief te maken.             | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Tijdens de voortgang gesprek kwam ik erachter dat mijn responsieve navigatie omgekeerd is. Ik moet eerst css gaan schrijven voor een klein scherm, vervolgens kan ik met @media min width de navigatie balk responsief maken.
+  - De @fontface, klopt niet 100%. <img width="256" height="101" alt="Scherm­afbeelding 2025-09-19 om 13 47 32" src="https://github.com/user-attachments/assets/ac0fa61f-085e-49d2-b814-930ae4027f8b" /> zoals je kan zien in deze screenshot klopt niet, font weight is de dikte de belangrijkste waardes van font weight is 400(normal) en 700(bold). Check css mozilla om de @fontface goed te gebruiken. 
 
 </details>
 
