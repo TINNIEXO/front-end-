@@ -1,0 +1,417 @@
+
+
+@font-face {
+  font-family: black-dunkin-sans;
+  src: url(../fonts/black-dunkin-sans.woff2);
+}
+
+@font-face {
+  font-family: bold-dunkin-sans;
+  src: url(../fonts/bold-dunkin-sans.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: condensed-dunkin-sans;
+  src: url(../fonts/condensed-dunkin-sans.woff2);
+}
+@font-face {
+  font-family: light-condensed-dunkin-sans;
+  src: url(../fonts/light-condensed-dunkin-sans.woff2);
+}
+
+:root{
+  --orange:rgb(245, 98, 0);
+  --white: white;
+  --doorzichtigWit: #ffffff40;
+  --black: black;
+  --magenta: magenta;
+  --green:rgb(37, 82, 3);
+  --pink:rgb(230, 0, 115);
+  --blue: #0051ff;
+  --backgroundWhite:rgb(252, 246, 246);
+  --veganGreen:#6EB830;
+}
+
+/* https://stackoverflow.com/questions/3239202/whats-the-correct-way-to-hide-the-h1-tag-and-not-be-banned-from-google*/
+.offscreen{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+body{
+  background-color: var(--backgroundWhite);
+}
+main section:nth-child(1){
+  padding-top: 10rem;
+  height: 50vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/afbeeldingen/banner.jpg");
+}
+
+main section:nth-of-type(1){
+  text-align: center;
+}
+
+main section:nth-of-type(1) {
+  text-align: center;
+}
+
+
+section::before {
+  content: ""; /* Pseudo-element zonder inhoud, puur decoratief */
+  position: absolute; /* Plaatst het element bovenop de achtergrond */
+  inset: 0; /* Laat het overlay-element de hele sectie bedekken */
+  background-color: rgba(0, 0, 0, 0.11); /* donker overlay */
+  z-index: 0; /* Zorgt dat overlay achter de tekst blijft */
+  height: 66vh;
+}
+
+section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+section:nth-child(1) article{
+  color: var(--white);
+}
+
+section:nth-child(1) article h2{
+  color: var(--white);
+  font-family: black-dunkin-sans ;
+  font-size: 3.2rem;
+  margin: 2rem;
+}
+
+section:nth-child(1) article p{
+  font-family: condensed-dunkin-sans;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+section:nth-child(1) article a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin: .7rem;
+}
+
+section:nth-child(1) article a:first-of-type{
+  font-family: black-dunkin-sans;
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--black);
+  padding: .5rem .7rem;
+  border-radius: .7rem;
+}
+
+section:nth-child(1) article a:last-of-type{
+  font-family: black-dunkin-sans;
+  font-size: 1rem;
+  background-color:var(--doorzichtigWit);
+  color: var(--white);
+  padding: .5rem .7rem;
+  border-radius: .7rem;
+}
+
+section:nth-child(2) h2{
+  text-align: center;
+  font-family: black-dunkin-sans;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin: 2rem;
+}
+
+section:nth-child(2) article:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green);
+  color: white;
+  margin : 1rem;
+  text-align: center;
+  height: 26vh;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+}
+
+section:nth-child(2) article:nth-of-type(1) img{
+  display: block;
+  width:60%;
+  object-fit: cover;
+  max-height: 60%;
+}
+section:nth-child(2) article:nth-of-type(1) h3{
+  font-family: condensed-dunkin-sans;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+section:nth-child(2) article:nth-of-type(1) p{
+  font-family: light-condensed-dunkin-sans;
+  font-size: 1.5rem;
+  margin-top: .4rem;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(1) a{
+  font-family: black-dunkin-sans;
+  font-size: .9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: .6rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1); /* subtiele schaduw onder de knop */
+  margin-top: 1rem;
+  margin-bottom:1rem;
+}
+section:nth-child(2) article:nth-of-type(1) a:hover{
+  padding: .9rem 2rem;
+  border-radius: 1rem;
+}
+
+
+section:nth-child(2) article:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--pink);
+  color: white;
+  margin : 1rem;
+  text-align: center;
+  height: 26vh;
+  border-radius: 2rem;
+  margin-bottom: 6rem;
+}
+
+section:nth-child(2) article:nth-of-type(2) img{
+  display: block;
+  width:45%;
+  object-fit: cover;
+  max-height: 66%;
+}
+
+section:nth-child(2) article:nth-of-type(2) h3{
+  font-family: condensed-dunkin-sans;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(2) p{
+  font-family: light-condensed-dunkin-sans;
+  font-size: 1.5rem;
+  margin-top: .4rem;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(2) a{
+  font-family: black-dunkin-sans;
+  font-size: .9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: .6rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1); /* subtiele schaduw onder de knop */
+  margin-top: 1rem;
+  margin-bottom:1rem;
+}
+section:nth-child(2) article:nth-of-type(2) a:hover{
+  padding: .9rem 2rem;
+  border-radius: 1rem;
+}
+
+section:nth-child(2) article:nth-of-type(3){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+  color: white;
+  margin : 1rem;
+  text-align: center;
+  height: 26vh;
+  border-radius: 2rem;
+  margin-bottom: 10rem;
+}
+
+section:nth-child(2) article:nth-of-type(3) img{
+  display: block;
+  width:45%;
+  object-fit: cover;
+  max-height: 66%;
+}
+
+section:nth-child(2) article:nth-of-type(3) h3{
+  font-family: condensed-dunkin-sans;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(3) p{
+  font-family: light-condensed-dunkin-sans;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-top: .4rem;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(3) a{
+  font-family: black-dunkin-sans;
+  font-size: .9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: .6rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1); /* subtiele schaduw onder de knop */
+  margin-top: 1rem;
+  margin-bottom:1rem;
+}
+section:nth-child(2) article:nth-of-type(3) a:hover{
+  padding: .9rem 2rem;
+  border-radius: 1rem;
+}
+
+
+
+
+
+section:nth-child(2) article:nth-of-type(4){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--orange);
+  color: white;
+  margin : 1rem;
+  text-align: center;
+  height: 26vh;
+  border-radius: 2rem;
+  margin-bottom: 10rem;
+}
+
+section:nth-child(2) article:nth-of-type(4) img{
+  display: block;
+  width:45%;
+  object-fit: cover;
+  max-height: 80%;
+}
+
+section:nth-child(2) article:nth-of-type(4) h3{
+  font-family: condensed-dunkin-sans;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(4) p{
+  font-family: light-condensed-dunkin-sans;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-top: .4rem;
+  margin-bottom: 0;
+}
+
+section:nth-child(2) article:nth-of-type(4) a{
+  font-family: black-dunkin-sans;
+  font-size: .9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: .6rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1); /* subtiele schaduw onder de knop */
+  margin-top: 1rem;
+  margin-bottom:1rem;
+}
+section:nth-child(2) article:nth-of-type(4) a:hover{
+  padding: .9rem 2rem;
+  border-radius: 1rem;
+}
+
+
+
+section:nth-child(3) article:first-of-type{
+  background-color:var(--veganGreen);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 3rem;
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+
+section:nth-child(3) article:first-of-type img{
+  width: 100%;
+  height: auto;
+
+}
+
+section:nth-child(3) h2{
+  background-color:var(--veganGreen) ;
+  text-align:center;
+  font-family: black-dunkin-sans;
+  font-size: 3.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  border-radius: 2.5rem 2.5rem 0 0;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+section:nth-child(3) h3{
+  text-align:center;
+  font-family: black-dunkin-sans;
+  font-size: 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top:0 ;
+  margin-right: .6rem;
+  margin-left: .6rem;
+  margin-bottom: .7rem;
+}
+
+section:nth-child(3) p{
+  text-align: center;
+  margin: 2rem;
+  margin-top: 0;
+  color: white;
+}
+
+
+section:nth-child(3) article:first-of-type a{
+  font-family: black-dunkin-sans;
+  font-size: 1rem;
+  text-align: center;
+  color:var(--orange);
+  background-color: white;
+  text-decoration: none;
+  margin: 1rem;
+  display:block;
+  padding: .5rem;
+  text-transform: uppercase;
+  border-radius: 2.5rem;
+
+}
+
+section:nth-child(3) article:first-of-type a:last-of-type{
+  background-color:var(--orange);
+  color:var(--white);
+}
