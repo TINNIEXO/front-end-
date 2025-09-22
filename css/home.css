@@ -55,7 +55,7 @@ main section:nth-child(1){
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("afbeeldingen/banner.jpg");
+  background-image: url("/afbeeldingen/banner.jpg");
 }
 
 main section:nth-of-type(1){
