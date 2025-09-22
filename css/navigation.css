@@ -1,0 +1,214 @@
+@font-face {
+    font-family: dunkin-sans;
+    src: url(../fonts/dunkin-sans-regular.woff2);
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: footer-dunkin-sans;
+    src: url(../fonts/footer-dunkin-sans.woff2);
+}
+
+@font-face {
+    font-family: condensed-dunkin-sans;
+    src: url(../fonts/condensed-dunkin-sans.woff2);
+}
+
+@font-face {
+    font-family: bold-dunkin-sans;
+    src: url(../fonts/bold-dunkin-sans.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: black-dunkin-sans;
+    src: url(../fonts/black-dunkin-sans.woff2);
+}
+
+@font-face {
+    font-family: StandardFooter-sans;
+    src: url(../fonts/StandardFooter-sans.woff2);
+}
+
+@font-face {
+    font-family: light-condensed-dunkin-sans;
+    src: url(../fonts/font7.woff2);
+}
+
+
+
+
+:root{
+    --orange:rgb(245, 98, 0);
+    --white: white;
+    --black: black;
+    --magenta: magenta;
+}
+
+body{
+    font-family: dunkin-sans;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    z-index: 999;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    text-align: center;
+    background-color: var(--orange);
+    padding: 2rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+header button{
+    order: -1;
+}
+
+/* hamburger button v */
+header button{
+  font-size: 1rem;
+  display:block;
+  display: grid;
+  position: absolute;
+  top:1.7rem;
+  left: 1.5rem;
+  width: 3em;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color:var(--orange);
+  align-items: center;
+  justify-items: center;
+}
+header button span{
+  display: block;
+  width: 1.5em;
+  height: .2em;
+  background-color: var(--white);
+  border-radius: 1em;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  transition: .3s;
+}
+
+button span:nth-of-type(1){
+  translate:0 -.5em;
+}
+
+button span:nth-of-type(2){
+  translate:0 .5em;
+}
+
+
+button.is-open span:nth-of-type(1){
+  rotate: 45deg;
+  translate: 0;
+}
+button.is-open span:nth-of-type(2){
+  rotate: -45deg;
+  translate: 0;
+}
+/* hamburger button ^ */
+
+header nav{
+    position: fixed;
+    top:5rem;
+    right:0;
+    bottom:0;
+    left:0;
+    transform: translateX(-100%);
+    transition: 0.8s;
+    background-color:var(--orange);
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 2rem;
+}
+
+  
+
+
+header nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: bold-dunkin-sans;
+}
+
+
+header nav li a:hover{
+    text-decoration: underline white .2rem;
+    transition: .8s;
+    
+}
+
+
+
+header nav.toonMenu{
+    transform:translateX(0%);
+    transition: 0.8s;
+}
+
+
+@media (min-width:55em) {
+    header button {
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: flex-start;
+  
+    }
+
+    header a img{
+        position: static;
+        margin-right: 1rem;
+
+    }
+    header nav {
+        position: static;
+        transform: none;
+        transition: none;
+        background-color: transparent;
+        width: auto;
+    }
+
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav li a{
+        font-size: 1rem;
+    }
+
+    header nav li a:hover{
+        text-decoration: underline white .2rem;
+        transition: .8s;
+        
+    }
+
+    header nav.toonMenu{
+        transform: none;
+    }
+}
