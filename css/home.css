@@ -50,7 +50,7 @@ body{
 }
 main section:nth-child(1){
   padding-top: 10rem;
-  height: 50vh;
+  height: 48vh;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -73,7 +73,7 @@ section::before {
   inset: 0; /* Laat het overlay-element de hele sectie bedekken */
   background-color: rgba(0, 0, 0, 0.11); /* donker overlay */
   z-index: 0; /* Zorgt dat overlay achter de tekst blijft */
-  height: 66vh;
+  height: 62.5vh;
 }
 
 section > * {
