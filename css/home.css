@@ -31,6 +31,7 @@
   --blue: #0051ff;
   --backgroundWhite:rgb(252, 246, 246);
   --veganGreen:#6EB830;
+  --darkmodeBlack: #121212;
 }
 
 /* https://stackoverflow.com/questions/3239202/whats-the-correct-way-to-hide-the-h1-tag-and-not-be-banned-from-google*/
@@ -49,7 +50,7 @@ body{
   background-color: var(--backgroundWhite);
 }
 main section:nth-child(1){
-  padding-top: 10rem;
+  padding-top: 8rem;
   height: 48vh;
   position: relative;
   background-size: cover;
@@ -67,13 +68,13 @@ main section:nth-of-type(1) {
 }
 
 
-section::before {
+main > section:nth-of-type(1)::before {
   content: ""; /* Pseudo-element zonder inhoud, puur decoratief */
   position: absolute; /* Plaatst het element bovenop de achtergrond */
   inset: 0; /* Laat het overlay-element de hele sectie bedekken */
-  background-color: rgba(0, 0, 0, 0.11); /* donker overlay */
+  background-color: rgba(0, 0, 0, 0.2); /* donker overlay */
   z-index: 0; /* Zorgt dat overlay achter de tekst blijft */
-  height: 62.5vh;
+  /* height: 62.5vh; */
 }
 
 section > * {
@@ -417,3 +418,26 @@ section:nth-child(3) article:first-of-type a:last-of-type{
 }
 
 
+@media screen and (prefers-color-scheme: dark){
+
+  header{
+    background-color:var(--darkmodeBlack);
+  }
+
+  main section:nth-child(1){
+    padding-top: 8rem;
+    height: 48vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../afbeeldingen/darkmode-banner.png");
+  }
+
+  body{
+    background-color:var(--darkmodeBlack) ;
+  }
+
+
+
+}

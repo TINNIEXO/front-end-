@@ -12,6 +12,7 @@
     --blue: #0051ff;
     --backgroundWhite:rgb(252, 246, 246);
     --veganGreen:#6EB830;
+    --darkmodeBlack: #121212;
   }
 
 footer {
@@ -37,3 +38,11 @@ footer nav ul li a {
 footer nav ul li a:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (prefers-color-scheme: dark){
+    footer{
+        background-color:var(--darkmodeBlack);
+        border-top: solid  var(--orange);
+    }
+}  
