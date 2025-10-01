@@ -8,6 +8,8 @@
   <title>DunkinDonuts</title>
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/about-pagge.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -38,7 +40,7 @@
   </header> 
 
 
-  <main>
+  <main data-aos="fade-up">
     <section>
         <h2>About us</h2>
         <article>
@@ -48,21 +50,21 @@
 
     <section>
         <h2>DunkinDonuts</h2>
-        <article>
+        <article data-aos="fade-up">
             <h3>Sinds <strong>1950</strong></h3>
             <p>Dunkin' begon als een kleine donut- en koffiezaak in Quincy, Massachusetts. Sindsdien zijn we uitgegroeid tot een wereldwijd geliefd koffie- en donutmerk, dat elke dag miljoenen gasten bedient.</p>
-            <img src="afbeeldingen/vintage-dunkin.png" alt="">
+            <img src="afbeeldingen/vintage-dunkin.png" alt="een oude foto van de eerste filiaal van dunkin donuts in Quincy Masschusetts">
         </article>
-        <article>
+        <article data-aos="fade-up">
             <h3>dunkin’ in <strong>Nederland</strong></h3>
             <p>Dunkin’ opende zijn eerste Dunkin’ Donuts-winkel in Nederland begin 2017 en zijn eerste winkel in België in 2020. Het bedrijf kondigt aan dat het op het punt staat "Nederland en België te veroveren."</p>
-            <img src="afbeeldingen/dunkindonuts-nl.jpg" alt="">
+            <img src="afbeeldingen/dunkindonuts-nl.jpg" alt="afbeelding van de eerste filiaal van DunkinDonuts in nederland">
         </article>
 
-        <article>
+        <article data-aos="fade-up">
             <h3>Dunkin’ <strong>wereldwijd</strong></h3>
             <p>Dunkin' (voorheen Dunkin' Donuts), opgericht in 1950, heeft meer dan 12.200 locaties in 45 landen wereldwijd. Het bedrijf opereert voornamelijk via franchisenemers. Europa is de thuisbasis van 240 Dunkin'-winkels.</p>
-            <img src="afbeeldingen/visual-map.png" alt="">
+            <img src="afbeeldingen/visual-map.png" alt="een visuele map met landen waar je DunkinDonuts kan vinden">
         </article>
 
     </section>
@@ -86,5 +88,14 @@
   </footer>
 
   <script src="javascript/javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 1500, // animatie duurt 1 seconde
+    easing: 'ease-in-out',
+    once: false      // animatie gebeurt maar één keer
+  });
+  </script>
+
 </body>
 </html>
