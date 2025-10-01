@@ -1,39 +1,4 @@
 
-
-@font-face {
-  font-family: black-dunkin-sans;
-  src: url(../fonts/black-dunkin-sans.woff2);
-}
-
-@font-face {
-  font-family: bold-dunkin-sans;
-  src: url(../fonts/bold-dunkin-sans.woff2);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: condensed-dunkin-sans;
-  src: url(../fonts/condensed-dunkin-sans.woff2);
-}
-@font-face {
-  font-family: light-condensed-dunkin-sans;
-  src: url(../fonts/light-condensed-dunkin-sans.woff2);
-}
-
-:root{
-  --orange:rgb(245, 98, 0);
-  --white: white;
-  --doorzichtigWit: #ffffff40;
-  --black: black;
-  --magenta: magenta;
-  --green:rgb(37, 82, 3);
-  --pink:rgb(230, 0, 115);
-  --blue: #0051ff;
-  --backgroundWhite:rgb(252, 246, 246);
-  --veganGreen:#6EB830;
-  --darkmodeBlack: #121212;
-}
-
 /* https://stackoverflow.com/questions/3239202/whats-the-correct-way-to-hide-the-h1-tag-and-not-be-banned-from-google*/
 .offscreen{
     position: absolute;
@@ -47,20 +12,21 @@
   }
 
 body{
-  background-color: var(--backgroundWhite);
+  background-color: var(--background-color);
 }
 main section:nth-child(1){
-  padding-top: 8rem;
-  height: 48vh;
+  padding-top: 10rem;
+  height: 50vh;
+  max-height: 60vh;
+  margin-bottom: 2rem;
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../afbeeldingen/banner.jpg");
-}
-
-main section:nth-of-type(1){
-  text-align: center;
+  @media screen and (prefers-color-scheme: dark){
+    background-image: url("../afbeeldingen/darkmode-banner.png");
+  }
 }
 
 main section:nth-of-type(1) {
@@ -91,11 +57,11 @@ section:nth-child(1) article h2{
   color: var(--white);
   font-family: black-dunkin-sans ;
   font-size: 3.2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 section:nth-child(1) article p{
-  font-family: condensed-dunkin-sans;
+  font-family:condensed-dunkin-sans;
   text-transform: uppercase;
   font-size: 1.5rem;
   opacity: 80%;
@@ -135,6 +101,12 @@ section:nth-child(2) h2{
   margin: 2rem;
 }
 
+
+
+
+
+
+
 section:nth-child(2) article:nth-of-type(1){
   display: flex;
   flex-direction: column;
@@ -145,14 +117,16 @@ section:nth-child(2) article:nth-of-type(1){
   text-align: center;
   height: 26vh;
   border-radius: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 section:nth-child(2) article:nth-of-type(1) img{
   display: block;
-  width:60%;
+  width:70%;
+  max-width: 20em;
   object-fit: cover;
-  max-height: 60%;
+  max-height: 66%;
+  overflow: visible;
 }
 section:nth-child(2) article:nth-of-type(1) h3{
   font-family: condensed-dunkin-sans;
@@ -162,6 +136,7 @@ section:nth-child(2) article:nth-of-type(1) h3{
 }
 section:nth-child(2) article:nth-of-type(1) p{
   font-family: light-condensed-dunkin-sans;
+  grid-row-start: 2;
   font-size: 1.5rem;
   margin-top: .4rem;
   margin-bottom: 0;
@@ -169,6 +144,7 @@ section:nth-child(2) article:nth-of-type(1) p{
 
 section:nth-child(2) article:nth-of-type(1) a{
   font-family: black-dunkin-sans;
+  grid-row-start: 3;
   font-size: .9rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -178,12 +154,9 @@ section:nth-child(2) article:nth-of-type(1) a{
   border-radius: 1rem;
   box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1); /* subtiele schaduw onder de knop */
   margin-top: 1rem;
-  margin-bottom:1rem;
+  margin-bottom:1.5rem;
 }
-section:nth-child(2) article:nth-of-type(1) a:hover{
-  padding: .9rem 2rem;
-  border-radius: 1rem;
-}
+
 
 
 section:nth-child(2) article:nth-of-type(2){
@@ -196,14 +169,16 @@ section:nth-child(2) article:nth-of-type(2){
   text-align: center;
   height: 26vh;
   border-radius: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 section:nth-child(2) article:nth-of-type(2) img{
   display: block;
-  width:45%;
+  max-width: 13em;
+  width:55%;
   object-fit: cover;
   max-height: 66%;
+  overflow: visible;
 }
 
 section:nth-child(2) article:nth-of-type(2) h3{
@@ -233,10 +208,6 @@ section:nth-child(2) article:nth-of-type(2) a{
   margin-top: 1rem;
   margin-bottom:1rem;
 }
-section:nth-child(2) article:nth-of-type(2) a:hover{
-  padding: .9rem 2rem;
-  border-radius: 1rem;
-}
 
 section:nth-child(2) article:nth-of-type(3){
   display: flex;
@@ -248,14 +219,16 @@ section:nth-child(2) article:nth-of-type(3){
   text-align: center;
   height: 26vh;
   border-radius: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 
 section:nth-child(2) article:nth-of-type(3) img{
   display: block;
-  width:45%;
+  width:55%;
+  max-width: 16em;
   object-fit: cover;
-  max-height: 66%;
+  overflow: visible;
+  height: 90%;
 }
 
 section:nth-child(2) article:nth-of-type(3) h3{
@@ -284,15 +257,7 @@ section:nth-child(2) article:nth-of-type(3) a{
   border-radius: 1rem;
   box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1); /* subtiele schaduw onder de knop */
   margin-top: 1rem;
-  margin-bottom:1rem;
 }
-section:nth-child(2) article:nth-of-type(3) a:hover{
-  padding: .9rem 2rem;
-  border-radius: 1rem;
-}
-
-
-
 
 
 section:nth-child(2) article:nth-of-type(4){
@@ -305,14 +270,16 @@ section:nth-child(2) article:nth-of-type(4){
   text-align: center;
   height: 26vh;
   border-radius: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 
 section:nth-child(2) article:nth-of-type(4) img{
   display: block;
   width:45%;
+  max-width: 15em;
   object-fit: cover;
-  max-height: 80%;
+  overflow: visible;
+  height: 100%;
 }
 
 section:nth-child(2) article:nth-of-type(4) h3{
@@ -418,26 +385,206 @@ section:nth-child(3) article:first-of-type a:last-of-type{
 }
 
 
-@media screen and (prefers-color-scheme: dark){
 
-  header{
-    background-color:var(--darkmodeBlack);
-  }
+
+@media (min-width:55em) {
 
   main section:nth-child(1){
-    padding-top: 8rem;
-    height: 48vh;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../afbeeldingen/darkmode-banner.png");
+    padding-top: 16rem;
+    height: 50vh;
+    max-height: 60vh;
+    margin-bottom: 2rem;
+  }
+  
+  
+  section:nth-child(2) article:nth-of-type(1){
+    display:grid;
+    grid-template-columns: max-content max-content 1fr;
+    grid-template-rows:  max-content max-content max-content;
+    padding-bottom: .1rem;
+    margin-bottom: 6rem;
+  }  
+
+  section:nth-child(2) article:nth-of-type(1) img{
+    grid-column: 2;
+    grid-row: 1;
+    position: absolute;
+    width: 60%;
+    max-width: 32rem;
+    justify-self: self-end;
+    overflow: visible;
   }
 
-  body{
-    background-color:var(--darkmodeBlack) ;
+  section:nth-child(2) article:nth-of-type(1) h3{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(1) p{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: start;
+    margin: 0;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+
+  }
+
+  section:nth-child(2) article:nth-of-type(1) a{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1rem;
+    justify-self: self-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
 
+
+
+  section:nth-child(2) article:nth-of-type(2){
+    display:grid;
+    grid-template-columns: max-content max-content 1fr;
+    grid-template-rows: max-content max-content max-content;
+    color: white;
+    padding-bottom: .1rem;
+    margin-bottom: 6rem;
+  }  
+
+  section:nth-child(2) article:nth-of-type(2) img{
+    grid-column: 2;
+    grid-row: 1;
+    position: absolute;
+    width: 38%;
+    max-width: 23.5rem;
+    justify-self: self-end;
+    overflow: visible;
+    margin-right: 5rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(2) h3{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(2) p{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+
+  }
+
+  section:nth-child(2) article:nth-of-type(2) a{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1rem;
+    justify-self: self-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+  }
+
+  section:nth-child(2) article:nth-of-type(3){
+    display:grid;
+    grid-template-columns: max-content max-content 1fr;
+    grid-template-rows: max-content max-content max-content;
+    color: white;
+    padding-bottom: .1rem;
+    margin-bottom: 6rem;
+  }  
+
+  section:nth-child(2) article:nth-of-type(3) img{
+    grid-column: 2;
+    grid-row: 1;
+    position: absolute;
+    width: 63%;
+    max-width: 22em;
+    justify-self: self-end;
+    overflow: visible;
+    margin-right: 3rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(3) h3{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(3) p{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    text-align: start;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+
+  }
+
+  section:nth-child(2) article:nth-of-type(3) a{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1rem;
+    justify-self: self-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+  }
+
+
+
+  section:nth-child(2) article:nth-of-type(4){
+    display:grid;
+    grid-template-columns: max-content max-content 1fr;
+    grid-template-rows: max-content max-content max-content;
+    color: white;
+    padding-bottom: .1rem;
+  }  
+
+  section:nth-child(2) article:nth-of-type(4) img{
+    grid-column: 2;
+    grid-row: 1;
+    position: absolute;
+    width: 40%;
+    max-width: 22.5em;
+    justify-self: self-end;
+    overflow: visible;
+    margin-right: 5rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(4) h3{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+  }
+
+  section:nth-child(2) article:nth-of-type(4) p{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+
+  }
+
+  section:nth-child(2) article:nth-of-type(4) a{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1rem;
+    justify-self: self-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+  }
 
 }
