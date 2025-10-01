@@ -160,6 +160,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - veel afbeeldingen hadden geen "alt" tekst. Heb dus alle afbeeldingen een duidelijke alt gegeven
+  - mijn 2e pagina had geen h1. Heb dus een h1 gegeven.
+
 
 </details>
 
@@ -178,6 +181,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+  groepje was er nauwelijks. 
+  - ik had het deze dag over hoe ik dark mode op de juiste manier moest doen, een generale css bestand maken en alles ordenen. 
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
@@ -189,9 +194,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Generale css bestand maken
+  - darkmode op de juiste manier uitvoeren dus geen @media
+  - Verwijder onnodige afbeeldingen
   - ...
 
 </details>
