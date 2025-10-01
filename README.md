@@ -211,19 +211,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dunkin-startpagina1" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dunkin-startpagina2" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dunkin-startpagina3" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dunkin-startpagina4" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/about-us-medium.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  ik vond het erg goed gaan met de website van lightmode naar darkmode te maken, ik weet niet waarom maar ik vindt het best leuk om naar te kijken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/about-us-medium.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  ik vond het erg jammer dat ik deze article niet mooier kon opmaken voor grotere schermen. De img die werkte niet mee en ging constant alle kanten op en het werkte gewoon voor mij niet. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/dunkin-startpagina4" width="375px" alt="bummer">
 </details>
 
 
